@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11ffffff">
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/free_dialog_bg"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/title_production"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="项目生产信息"
+            android:background="#38ADFF"
+            android:textColor="#ffffff"
+            android:textSize="19sp"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_engeenirName_production"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="工程项目名称:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:id="@+id/EditText_engineerprogram_production"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="10"
+                ></EditText>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="#E4E4E4"/>-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+        <!--android:background="@null"-->
+        <!--android:id="@+id/message_companyType"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:textSize="20sp"-->
+        <!--android:text="单位类型:"/>-->
+
+        <!--<Spinner-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:entries="@array/dialog_type"-->
+        <!--android:layout_gravity="center_horizontal"></Spinner>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="#e4e4e4"/>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:background="@null"-->
+                <!--android:id="@+id/message_buildCompany"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:textSize="20sp"-->
+                <!--android:lines="1"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="建设单位:"/>-->
+            <!--<View-->
+                <!--android:layout_width="1px"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="#E4E4E4"/>-->
+            <!--<Spinner-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:entries="@array/dialog_type"-->
+                <!--android:id="@+id/Spinner_buildCompany"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:layout_weight="5"-->
+                <!--></Spinner>-->
+        <!--</LinearLayout>-->
+
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"-->
+            <!--android:src="@drawable/hori_line"-->
+            <!--android:scaleType="fitXY"/>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_numOfItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="批件号:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:id="@+id/Editext_pijianhao"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="10"
+                ></EditText>
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_money_invesment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="投资金额:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:id="@+id/Edit_investment_money"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="10"
+                ></EditText>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="#e4e4e4"/>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:background="@null"-->
+                <!--android:id="@+id/message_workCompany"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:textSize="20sp"-->
+                <!--android:lines="1"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="施工单位:"/>-->
+            <!--<View-->
+                <!--android:layout_width="1px"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="#E4E4E4"/>-->
+            <!--<Spinner-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:entries="@array/dialog_type"-->
+                <!--android:id="@+id/Spinner_workCompany_dialog"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:layout_weight="5"-->
+                <!--></Spinner>-->
+        <!--</LinearLayout>-->
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"-->
+            <!--android:src="@drawable/hori_line"-->
+            <!--android:scaleType="fitXY"/>-->
+
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_originalNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="原件批号:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/Edit_orginal_pijianhao"
+                android:layout_weight="10"
+                ></EditText>
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_production_starday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="开始日期:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:id="@+id/Edit_production_starday"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="10"
+                ></EditText>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_production_endday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="结束日期:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:id="@+id/Edit_production_endday"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="10"
+                ></EditText>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_production_planperoid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="计划时间:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/Edit_production_peroidplan"
+                android:layout_weight="10"
+                ></EditText>
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_production_engineerMainMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="工程主要信息:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/Edit_production_engineerMainMessage"
+                android:layout_weight="10"
+                ></EditText>
+
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_production_thisWeekCompleteProcess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="这周完成进程:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/Edit_production_thisWeekCompleteProcess"
+                android:layout_weight="10"
+                ></EditText>
+
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_production_engineerTotalProcess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="工程总进程:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/Edit_production_engineerTotalProcess"
+                android:layout_weight="10"
+                ></EditText>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_production_restProcess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="剩余工程:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/Edit_production_restProcess"
+                android:layout_weight="10"
+                ></EditText>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_production_nextWeekPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="下一个周计划:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/Edit_production_nextWeekPlan"
+                android:layout_weight="10"
+                ></EditText>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_production_contractMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="合同金额:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/Edit_production_contractMoney"
+                android:layout_weight="10"
+                ></EditText>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_production_imageProcess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="预想进程:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/Edit_production_imageProcess"
+                android:layout_weight="10"
+                ></EditText>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_production_remarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="标记:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:id="@+id/Edit_production_remarks"
+                android:layout_weight="10"
+                ></EditText>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="#E4E4E4"/>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:background="@null"-->
+                <!--android:id="@+id/Text_production_fillingDate"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:textSize="20sp"-->
+                <!--android:lines="1"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="装满日期:"/>-->
+            <!--<View-->
+                <!--android:layout_width="1px"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="#E4E4E4"/>-->
+            <!--<EditText-->
+                <!--android:background="@null"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:id="@+id/Edit_production_fillingDate"-->
+                <!--android:layout_weight="10"-->
+                <!--></EditText>-->
+
+
+        <!--</LinearLayout>-->
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"-->
+            <!--android:src="@drawable/hori_line"-->
+            <!--android:scaleType="fitXY"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="#E4E4E4"/>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:background="@null"-->
+                <!--android:id="@+id/Text_production_hrequipment"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:textSize="20sp"-->
+                <!--android:lines="1"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="设备情况:"/>-->
+            <!--<View-->
+                <!--android:layout_width="1px"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="#E4E4E4"/>-->
+            <!--<EditText-->
+                <!--android:background="@null"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:id="@+id/Edit_production_hrequipment"-->
+                <!--android:layout_weight="10"-->
+                <!--></EditText>-->
+
+
+        <!--</LinearLayout>-->
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"-->
+            <!--android:src="@drawable/hori_line"-->
+            <!--android:scaleType="fitXY"/>-->
+
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="#E4E4E4"/>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:background="@null"-->
+                <!--android:id="@+id/Text_production_signPerformence"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:textSize="20sp"-->
+                <!--android:lines="1"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="签订的表现:"/>-->
+            <!--<View-->
+                <!--android:layout_width="1px"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="#E4E4E4"/>-->
+            <!--<EditText-->
+                <!--android:background="@null"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:id="@+id/Edit_production_signPerformence"-->
+                <!--android:layout_weight="10"-->
+                <!--></EditText>-->
+
+
+        <!--</LinearLayout>-->
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"-->
+            <!--android:src="@drawable/hori_line"-->
+            <!--android:scaleType="fitXY"/>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/no_produtions"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:lines="1"
+                android:text="取消"
+                android:textColor="#7D7D7D"
+                android:textSize="16sp"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <Button
+                android:id="@+id/yes_production"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:lines="1"
+                android:text="确定"
+                android:textColor="#38ADFF"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

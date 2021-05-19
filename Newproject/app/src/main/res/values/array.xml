@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dialog_type">
+        <item>输电队</item>
+        <item>安装三队</item>
+        <item>防腐队</item>
+        <item>安装二队</item>
+        <item>建筑工程项目部</item>
+        <item>安装一队</item>
+        <item>金属车间</item>
+    </string-array>
+</resources>

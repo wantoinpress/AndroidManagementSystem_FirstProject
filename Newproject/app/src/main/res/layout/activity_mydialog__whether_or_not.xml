@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11ffffff">
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/free_dialog_bg"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/title_production"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="建设单位管理"
+            android:background="#38ADFF"
+            android:textColor="#ffffff"
+            android:textSize="19sp"/>
+
+
+
+
+
+
+        <!-- <View
+             android:layout_width="match_parent"
+             android:layout_height="1px"
+             android:background="#e4e4e4"/>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="40dp"
+             android:orientation="horizontal">
+             <TextView
+                 android:background="@null"
+                 android:id="@+id/message_buildCompany"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_gravity="bottom"
+                 android:layout_marginRight="20dp"
+                 android:textSize="20sp"
+                 android:lines="1"
+                 android:layout_weight="1"
+                 android:text="建设单位:"/>
+             <View
+                 android:layout_width="1px"
+                 android:layout_height="match_parent"
+                 android:background="#E4E4E4"/>
+             <Spinner
+                 android:layout_width="30dp"
+                 android:layout_height="wrap_content"
+                 android:entries="@array/dialog_type"
+                 android:id="@+id/Spinner_buildCompany"
+                 android:layout_gravity="bottom"
+                 android:layout_weight="5"
+                 ></Spinner>
+         </LinearLayout>
+
+
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="10dp"
+             android:src="@drawable/hori_line"
+             android:scaleType="fitXY"/>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_codeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="编码名称:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:id="@+id/Editext_codeName"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="10"
+                ></EditText>
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_remarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="备注:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:id="@+id/Edit_remarks"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="10"
+                ></EditText>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@null"
+                android:id="@+id/Text_isUsed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:lines="1"
+                android:layout_weight="1"
+                android:text="是否可用:"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <EditText
+                android:background="@null"
+                android:layout_width="30dp"
+                android:id="@+id/Edit_isUsed"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="10"
+                ></EditText>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="#E4E4E4"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/no_produtions"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:lines="1"
+                android:text="取消"
+                android:textColor="#7D7D7D"
+                android:textSize="16sp"/>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4"/>
+            <Button
+                android:id="@+id/yes_production"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="center"
+                android:lines="1"
+                android:text="修改"
+                android:textColor="#38ADFF"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPartent">#edffffff</color>
+    <color name="colorChild">#edffffff</color>
+    <color name="colorText">#464545</color>
+
+    <color name="background">#f0f8ff</color>
+
+    <color name="textcolorbackground" >#ffcf6f</color>
+    <color name="textcolorbackground2" >#beffcf6f</color>
+
+    <color name="table_line">#40052939</color>
+    <color name="table_reit">#4034BFFF</color>
+
+    <color name="Iformation_production_add_texttitle">#000000</color>
+    <color name="Iformation_production_add_texttitle_text_color_content">#d5070808</color>
+    <color name="Iformation_production_add_texttitle_text_color_hint">#4f000000</color>
+
+    <color name="color_transparent">#00000000</color>
+</resources>

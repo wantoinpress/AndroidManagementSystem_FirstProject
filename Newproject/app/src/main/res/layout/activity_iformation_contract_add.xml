@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.jiangtunjf.jgapplication.Main7Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="请填写要添加的合同信息"
+                android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                android:textSize="13sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="工程名称"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_contract_engineerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName"
+                        android:background="@null"
+                        android:hint="请输入工程名称"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="批件号"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_contract_numOfItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearIdCard1"
+                        android:background="@null"
+                        android:hint="请输入批件号"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearIdCard1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="建设单位"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_contract_constructionUnit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName1"
+                        android:background="@null"
+                        android:hint="请输入建设单位"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="施工单位"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_contract_workUnit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearIdCard3"
+                        android:background="@null"
+                        android:hint="请输入施工单位"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearIdCard3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="工程日期"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_contract_engineerTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName2"
+                        android:background="@null"
+                        android:hint="请输入工程日期"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="合同编号"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_contract_contractNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearIdCard"
+                        android:background="@null"
+                        android:hint="请输入合同编号"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearIdCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="合同金额"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_contract_contractMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName24"
+                        android:background="@null"
+                        android:hint="请输入合同金额"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="签订日期"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_contract_signDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearIdCard4"
+                        android:background="@null"
+                        android:hint="请输入签订日期"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearIdCard4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="开工日期"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_contract_startDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName245"
+                        android:background="@null"
+                        android:hint="请输入开工日期"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName245"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="完工日期"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_contract_endDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearIdCard45"
+                        android:background="@null"
+                        android:hint="请输入完工日期"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearIdCard45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="履行情况"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_contract_performance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName2456"
+                        android:background="@null"
+                        android:hint="请输入履行情况"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName2456"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/hori_line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_sure"
+                    android:text="确定"
+                    android:textColor="@color/Iformation_production_add_texttitle"
+                    android:gravity="center"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_cancel"
+                    android:text="取消"
+                    android:textColor="@color/Iformation_production_add_texttitle"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

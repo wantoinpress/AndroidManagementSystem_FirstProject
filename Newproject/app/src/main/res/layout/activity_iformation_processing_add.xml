@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Iformation.Iformation_processing_add">
+    <EditText
+        android:id="@+id/Edit_order_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="序号:"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:layout_below="@+id/Edit_order_number"
+        android:id="@+id/Edit_project_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="工程项目名称:"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+    <!--<EditText-->
+        <!--android:layout_below="@+id/Edit_project_name"-->
+        <!--android:id="@+id/Edit_companyType"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="单位类型:"-->
+        <!--android:singleLine="true"-->
+        <!--android:ellipsize="end"/>-->
+
+    <TextView
+        android:layout_below="@+id/Edit_project_name"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Edit_companyType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:hint="单位类型:"
+        android:textSize="19dp"/>
+
+    <Spinner
+        android:layout_toRightOf="@+id/Edit_companyType"
+        android:id="@+id/Spinner_companyType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_project_name"
+        android:layout_above="@+id/Edit_buildCompany"></Spinner>
+
+
+    <!--<EditText-->
+        <!--android:layout_below="@+id/Edit_companyType"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/Edit_buildCompany"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="建设单位:"-->
+        <!--android:singleLine="true"-->
+        <!--android:ellipsize="end"/>-->
+    <TextView
+        android:layout_below="@+id/Edit_companyType"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Edit_buildCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:hint="建设单位:"
+        android:textSize="19dp"/>
+
+    <Spinner
+        android:layout_toRightOf="@+id/Edit_buildCompany"
+        android:id="@+id/Spinner_buildCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_companyType"
+        android:layout_above="@+id/Edit_pijianhao"></Spinner>
+
+        <EditText
+            android:layout_below="@+id/Edit_buildCompany"
+
+            android:id="@+id/Edit_pijianhao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="批件号:"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+    <EditText
+        android:layout_below="@+id/Edit_pijianhao"
+
+        android:id="@+id/Edit_wbs"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:layout_height="wrap_content"
+        android:hint="WBS元素:"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+
+
+    <EditText
+        android:id="@+id/Edit_Total_Investment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="投资总额(万元):"
+        android:numeric="integer"
+        android:singleLine="true"
+        android:layout_below="@+id/Edit_wbs"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:ellipsize="end"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/Spinner_workCompany"
+        android:layout_alignEnd="@+id/Spinner_workCompany" />
+    <!--<EditText-->
+        <!--android:layout_below="@+id/Edit_Total_Investment"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/Edit_workCompany"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="施工单位:"-->
+        <!--android:numeric="integer"-->
+        <!--android:singleLine="true"-->
+        <!--android:ellipsize="end"/>-->
+    <TextView
+        android:layout_below="@+id/Edit_Total_Investment"
+        android:layout_marginTop="15dp"
+        android:id="@+id/Edit_workCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:hint="施工单位:"
+        android:textSize="19dp"/>
+
+    <Spinner
+        android:layout_toRightOf="@+id/Edit_workCompany"
+        android:id="@+id/Spinner_workCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_Total_Investment"
+        android:layout_above="@+id/Edit_Year"></Spinner>
+
+
+    <EditText
+        android:layout_below="@+id/Edit_workCompany"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:id="@+id/Edit_Year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="工程年份(年):"
+        android:numeric="integer"
+        android:maxLength="4"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+    <TextView
+        android:layout_below="@+id/Edit_Year"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:id="@+id/Text_YesOrNot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="是否结转工程:"
+        android:textSize="17dp"/>
+    <EditText
+        android:layout_below="@+id/Text_YesOrNot"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:id="@+id/Edit_originalNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="原件批号:"
+        android:numeric="integer"
+        android:maxLength="4"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+    <Spinner
+        android:layout_toRightOf="@+id/Text_YesOrNot"
+        android:id="@+id/Spinner_ChangeProject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_Year"
+        android:layout_above="@+id/Edit_originalNum"></Spinner>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Btn_submit"
+        android:layout_below="@+id/Edit_originalNum"
+        android:layout_marginTop="20dp"
+
+        android:text="提交"/>
+
+
+</RelativeLayout>

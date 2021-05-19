@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.jiangtunjf.jgapplication.Main7Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="请填写要添加的生产信息"
+                android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                android:textSize="13sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="工程名称"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_engineerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName"
+                        android:background="@null"
+                        android:hint="请输入工程名称"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="批件号"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_numOfItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearIdCard1"
+                        android:background="@null"
+                        android:digits="0123456789XYZxyz*"
+                        android:hint="请输入批件号"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearIdCard1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="建设单位"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_workUnit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName1"
+                        android:background="@null"
+                        android:hint="请输入建设单位"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="投资总额"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_investMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearIdCard3"
+                        android:background="@null"
+                        android:digits="0123456789XYZxyz*"
+                        android:hint="请输入投资总额"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearIdCard3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="开工日期"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_startDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName2"
+                        android:background="@null"
+                        android:hint="请输入开工日期"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="竣工日期"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_endDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearIdCard"
+                        android:background="@null"
+                        android:hint="请输入竣工日期"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearIdCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="工程主要信息"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_engineerMainMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName24"
+                        android:background="@null"
+                        android:hint="请输入工程主要信息"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="周完成工程量"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_thisWeekCompleteProcess"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearIdCard4"
+                        android:background="@null"
+                        android:hint="请输入周完成工程量"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearIdCard4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="工程累计进展"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_engineerTotalProcess"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName245"
+                        android:background="@null"
+                        android:hint="请输入工程累计进展"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName245"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="剩余工作量"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_restProcess"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearIdCard45"
+                        android:background="@null"
+                        android:hint="请输入剩余工作量"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearIdCard45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="下周工程安排"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_nextWeekPlan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName2456"
+                        android:background="@null"
+                        android:hint="请输入下周工程安排"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName2456"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="合同签订情况"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_signPerformence"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearIdCard459"
+                        android:background="@null"
+                        android:hint="请输入合同签订情况"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearIdCard459"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="合同金额"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_contractMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName2457"
+                        android:background="@null"
+                        android:hint="请输入合同金额"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName2457"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="形象进程"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_imageProcess"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearIdCard99"
+                        android:background="@null"
+                        android:hint="请输入形象进程"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearIdCard99"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="备注"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_remarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName24579"
+                        android:background="@null"
+                        android:hint="请输入备注"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName24579"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="填报日期"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_fillingDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearIdCard999"
+                        android:background="@null"
+                        android:hint="请输入填报日期"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearIdCard999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="人力资源装备"
+                        android:textColor="@color/Iformation_production_add_texttitle"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_hrequipment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="94dp"
+                        android:layout_toLeftOf="@+id/clearName245791"
+                        android:background="@null"
+                        android:hint="请输入人力资源装备"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/Iformation_production_add_texttitle_text_color_content"
+                        android:textColorHint="@color/Iformation_production_add_texttitle_text_color_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/clearName245791"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:src="@drawable/addicon"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hori_line" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/hori_line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_sure"
+                    android:text="确定"
+                    android:textColor="@color/Iformation_production_add_texttitle"
+                    android:gravity="center"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_cancel"
+                    android:text="取消"
+                    android:textColor="@color/Iformation_production_add_texttitle"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

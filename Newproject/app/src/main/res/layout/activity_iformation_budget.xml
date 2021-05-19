@@ -1,0 +1,120 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/dlShow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Listview_choose_Iformation_budget"
+            android:listSelector="@drawable/list_item"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:alpha="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:text="全部筛选"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/Iformation_production_add_texttitle"
+            android:textSize="25sp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/hori_line"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:text="请输入要查询的项目公司："
+            android:textStyle="italic"
+            android:textColor="@color/Iformation_production_add_texttitle"
+            android:textSize="20sp"/>
+        <EditText
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/Edit_the_project_company"
+            android:textColor="@color/Iformation_production_add_texttitle"
+            android:background="@drawable/layout_rightplay_test_processing_form"
+            android:singleLine="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="130dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:text="请输入要查询的年份："
+            android:textStyle="italic"
+            android:textColor="@color/Iformation_production_add_texttitle"
+            android:textSize="20sp"/>
+
+        <EditText
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/Edit_company_year_processing"
+            android:textColor="@color/Iformation_production_add_texttitle"
+            android:background="@drawable/layout_rightplay_test_processing_form"
+            android:singleLine="true"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:id="@+id/btn_to_submit"
+                android:background="@drawable/selector_register"
+                android:textColor="@color/colorText"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="50dp"
+                android:id="@+id/btn_to_cancel"
+                android:text="取消"
+                android:background="@drawable/selector_register"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/expan_child"
+    android:gravity="center"
+
+    android:text="测试数据"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:textSize="25sp"
+    android:drawableLeft="@drawable/file"
+    android:drawablePadding="16dp"
+    android:paddingLeft="10dp"
+    android:background="@color/colorChild"
+    android:textColor="@color/colorText">
+
+
+</TextView>

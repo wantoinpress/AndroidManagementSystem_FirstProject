@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zdfwuy.newproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/files"
+        android:label="建设公司生产经营管理系统"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login_Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:logo="@drawable/homelogo"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Iformation.Iformation_processing"
+            android:label="公共信息"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Iformation.Iformation_contract"
+            android:label="合同信息"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Iformation.Iformation_processing_add"
+            android:label="添加合同信息"
+            android:parentActivityName=".Iformation.Iformation_processing"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Iformation.Iformation_budget"
+            android:label="预算信息"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Iformation.Iformation_production"
+            android:label="生产信息"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Iformation.Iformation_statistic"
+            android:label="统计信息"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Iformation.Iformation_costing"
+            android:label="成本信息"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Iformation.Iformation_biling"
+            android:label="结算信息"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Iformation.Iformation_subcontracting"
+            android:label="分包信息"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Data_Collection_Total.Data_collection_from"
+            android:label="汇总信息"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Analysis_Data.Time_possibility_analysis"
+            android:label="时间分析"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Analysis_Data.Numerical_analysis"
+            android:label="数字分析"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Management.Management_Type_of_Construction_Unit"
+            android:label="建设单位类型"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Management.Management_of_Construction_Unit"
+            android:label="建设单位管理"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Management.Management_Subcontract_Type"
+            android:label="分包类型管理"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Management.Management_Subcontractor"
+            android:label="分包单位管理"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Management.Management_Whether_or_not_code"
+            android:label="编码情况管理"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Management.Management_Performance"
+            android:label="履行情况管理"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Safeguard.Safeguard_division_management"
+            android:label="部门管理"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity android:name=".Safeguard.Safeguard_Managing_people" />
+        <activity
+            android:name=".Safeguard.Safeguard_Code_list"
+            android:label="代码管理"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Safeguard.Safeguard_Coding_style"
+            android:label="代码样式"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Daily.Daily_Operation"
+            android:label="操作日志"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Daily.Daily_Logging"
+            android:label="登录日志"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Daily.Daily_active_user"
+            android:label="用户日志"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Notice.Notice_to_manage"
+            android:label="公告维护"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Iformation.Iformation_production_add"
+            android:label="添加生产信息"
+            android:parentActivityName=".Iformation.Iformation_processing"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Iformation.Iformation_contract_add"
+            android:label="添加合同信息"
+            android:parentActivityName=".Iformation.Iformation_contract"
+            android:theme="@style/myapptheme" />
+        <activity android:name=".Iformation.Iformation_biling_add" />
+        <activity
+            android:name=".Iformation.Iformation_subcontracting_add"
+            android:label="添加分包信息"
+            android:parentActivityName=".Iformation.Iformation_subcontracting"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Iformation.Iformation_budget_add"
+            android:label="添加预算信息"
+            android:parentActivityName=".Iformation.Iformation_budget"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Iformation.Iformation_costing_add"
+            android:label="添加成本信息"
+            android:parentActivityName=".Iformation.Iformation_costing"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Iformation.Iformation_statistic_add"
+            android:label="添加统计信息"
+            android:parentActivityName=".Iformation.Iformation_statistic"
+            android:theme="@style/myapptheme" />
+        <activity android:name=".dialog.Mydialog_budget" />
+        <activity android:name=".dialog.Mydialog_subcontract" />
+        <activity android:name=".dialog.Mydialog_biling" />
+        <activity android:name=".dialog.Mydialog_statistic" />
+        <activity android:name=".Data_Collection_Total.Data_collection_from_add" />
+        <activity
+            android:name=".Data_Collection_Total.Data_collection_from_onclick"
+            android:label="添加查询信息"
+            android:parentActivityName=".Data_Collection_Total.Data_collection_from"
+            android:theme="@style/myapptheme" />
+        <activity android:name=".dialog.Mydialog_analysis.Mydialog_Time_analysis" />
+        <activity android:name=".dialog.Mydialog_analysis.Mydialog_Numerical_analysis" />
+        <activity android:name=".dialog.Mydialog_management.Mydialog_construction_unit" />
+        <activity android:name=".dialog.Mydialog_management.Mydialog_performance" />
+        <activity android:name=".dialog.Mydialog_management.Mydialog_subcontract_management" />
+        <activity android:name=".dialog.Mydialog_management.Mydialog_subcontractor_management" />
+        <activity android:name=".dialog.Mydialog_management.Mydialog_constrution_unit_management" />
+        <activity android:name=".dialog.Mydialog_management.Mydialog_Whether_or_not" />
+        <activity android:name=".dialog.Mydialog_safeguard.Mydialog_safeguard_division_mangement" />
+        <activity
+            android:name=".Safeguard.Safeguard_division_management_add"
+            android:label="添加部门管理信息"
+            android:parentActivityName=".Safeguard.Safeguard_division_management"
+            android:theme="@style/myapptheme" />
+        <activity
+            android:name=".Safeguard.Safeguard_Managing_people_shudian"
+            android:label="添加信息"
+            android:parentActivityName=".Safeguard.Safeguard_Managing_people"
+            android:theme="@style/myapptheme" />
+        <activity android:name=".dialog.Mydialog_safeguard.Mydialog_code_list_safeguard" />
+        <activity android:name=".dialog.Mydialog_to_Notice.Mydialog_Notice_to_manage" />
+        <activity android:name=".Notice.Notice_to_manage_add" />
+        <activity android:name=".dialog.Mydialog_cost" />
+        <activity
+            android:name=".Management.Management_Type_of_Construction_Unit_add"
+            android:label="添加单位"
+            android:parentActivityName=".Management.Management_Type_of_Construction_Unit"
+            android:theme="@style/myapptheme" />
+        <activity android:name=".Management.Management_Subcontractor_add" />
+        <activity android:name=".dialog.Mydialog_shudiandui"></activity>
+    </application>
+
+</manifest>
